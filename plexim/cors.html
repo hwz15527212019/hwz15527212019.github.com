@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- <html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="plecsModel"> -->
+<html>
+  <head>
+    <title>Example for cross-origin ressource sharing</title>
+  </head>
+<body>
+
+<h1>Buck Converter</h1>
+
+<link href="//demo.plexim.com/css/plecs.css" rel="stylesheet" type="text/css" />
+<link href="//demo.plexim.com/plexim/cors.css" rel="stylesheet" type="text/css" />
+<script>
+  if(window.jQuery) {
+    var arr = jQuery.fn.jquery.split('.');
+    if (arr[0] < 1 || (arr[0] == 1 && arr[1] < 7))
+    jQueryOld = jQuery.noConflict(true);
+  }
+</script>
+<script src="//demo.plexim.com/js/xdomain.min.js" slave="http://demo.plexim.com/proxy.html"></script>
+<!--[if lte IE 8]>
+  <script src="//demo.plexim.com/jquery.min.js"></script>
+<![endif]-->
+<script src="//demo.plexim.com/js/angular.min.js"></script>
+<script>if (window.jQueryOld) jQuery = jQueryOld;</script>
+<script src="//demo.plexim.com/js/plecs.min.js"></script>
+
+<div id="ng-app" ng-app="plecsModel">
+<p>This is an example how to use cross-origin ressource sharing (CORS).</p>
+<div pl-model="buck_conv" pl-path="plexim" pl-eval-url=true>Please enable JavaScript.</div>
+</div>
+
+</body>
+</html>

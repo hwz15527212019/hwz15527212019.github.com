@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="plecsModel">
+  <head>
+    <!--[if lte IE 8]>
+      <script src="jquery.min.js"></script>
+    <![endif]-->
+    <title>Induction machine drive with direct torque control</title>
+    <link href="/css/plecs.css" rel="stylesheet" type="text/css" />
+    <link href="/plexim/css/plexim_theme.css" rel="stylesheet" type="text/css" />
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/plecs.min.js"></script>
+  </head>
+<body>
+
+<a href="index.html">Home</a>
+<h1>Induction Machine Drive with Direct Torque Control</h1>
+<noscript class="plecs">
+<div class="msg msg-red"> Error: JavaScript is disabled in your browser. Please enable JavaScript to use this page.</div>
+</noscript>
+
+<div pl-model="im_drive_dtc" pl-path="plexim" pl-eval-url=true>
+</div>
+
+</body>
+</html>

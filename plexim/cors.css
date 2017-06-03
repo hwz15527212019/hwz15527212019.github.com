@@ -1,0 +1,36 @@
+
+body {
+  margin: 10px;
+  padding: 0;
+  font-size: 14px;
+}
+
+body,
+.plecs,
+.plecs div,
+.plecs table,
+.plecs input,
+.plecs a {
+   font-size: 14px;
+   line-height: normal;
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.plecs table th {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #007724; /* Pantone 7724 C */
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h3, h4 {
+  color: #888B8D; /* Pantone Cool Gray 8 */
+}
+
+
+
